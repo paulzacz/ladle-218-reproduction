@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig-base",
+  "include": ["./**/*"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "../dist",
+    "rootDir": "."
+  },
+  "exclude": []
+}

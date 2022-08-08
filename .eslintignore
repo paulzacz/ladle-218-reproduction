@@ -1,0 +1,12 @@
+.pnp.cjs
+.pnp.loader.mjs
+.yarn
+dist
+@scope/ladle-218-reproduction-guide/.cache
+@scope/ladle-218-reproduction-guide/public
+@scope/ladle-218-reproduction-shared/src/tokens/_*.ts
+@scope/ladle-218-reproduction/dev-tools/coverage/
+@scope/ladle-218-reproduction/src/**/*.stories.js
+@scope/ladle-218-reproduction/src/Icon/_autogen
+@scope/ladle-218-reproduction-icons/dist
+@scope/ladle-218-reproduction-icons/src

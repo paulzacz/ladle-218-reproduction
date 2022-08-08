@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig-base",
+  "include": ["**/*", "package.json", ".ladle/**/*"],
+  "references": [
+    { "path": "../ladle-218-reproduction" },
+    { "path": "../ladle-218-reproduction/tsconfig-package.json" }
+  ],
+  "compilerOptions": {
+    // Ensure that .d.ts files are created by tsc, but not .js files
+    "outDir": "./dist",
+    "rootDir": "."
+  }
+}

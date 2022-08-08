@@ -1,0 +1,10 @@
+{
+  "extends": "../../../../tsconfig-base",
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "../../dist/dev-tools/build-scripts",
+    "rootDir": "."
+  },
+  "exclude": []
+}

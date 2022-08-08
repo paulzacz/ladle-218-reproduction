@@ -1,0 +1,13 @@
+# Use Unix line endings for all text files
+* text eol=lf
+
+# Binary files should not be modified
+*.gif binary
+*.gz binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.woff binary
+*.woff2 binary
+*.zip binary

@@ -1,0 +1,4 @@
+**/src/Icon/_autogen/
+**/dist/*
+**/_autogen/**
+*.hbs

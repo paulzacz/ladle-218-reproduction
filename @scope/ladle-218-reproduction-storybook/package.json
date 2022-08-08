@@ -1,0 +1,37 @@
+{
+  "name": "@scope/ladle-218-reproduction-storybook",
+  "description": "Storybook for ladle-218-reproduction",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "build:types": "tsc --build",
+    "ladle:start": "ladle serve",
+    "ladle:build": "ladle build",
+    "ladle:preview": "ladle preview",
+    "upload:stage": "nimbus-cdn-upload upload --stage-api --static"
+  },
+  "dependencies": {
+    "@ladle/react": "^2.0.2",
+    "@scope/ladle-218-reproduction": "workspace:*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-a11y": "^6.4.22",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/addons": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@types/react": "^17.0.2",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-react-require": "^3.1.3",
+    "react-storybook-addon-props-combinations": "^1.1.0",
+    "typescript": "^4.7.3",
+    "vite": "^3.0.3"
+  }
+}

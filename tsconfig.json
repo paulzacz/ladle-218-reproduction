@@ -1,0 +1,4 @@
+{
+  "references": [{ "path": "@scope/ladle-218-reproduction" }, { "path": "scripts" }],
+  "files": []
+}

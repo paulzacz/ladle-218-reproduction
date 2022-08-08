@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "@scope/ladle-218-reproduction#build": {
+      "dependsOn": ["build:babel", "build:compile-sass", "build:copy-sass", "ladle-218-reproduction-root#build:types"]
+    },
+    "@scope/ladle-218-reproduction#build:babel": {
+      "dependsOn": []
+    },
+    "@scope/ladle-218-reproduction#build:compile-sass": {
+      "dependsOn": []
+    },
+    "@scope/ladle-218-reproduction#build:copy-sass": {
+      "dependsOn": []
+    },
+    "@scope/ladle-218-reproduction-storybook#start": {
+      "dependsOn": ["@scope/ladle-218-reproduction#build"],
+      "outputs": []
+    },
+    "ladle-218-reproduction-root#build:types": {
+      "dependsOn": []
+    },
+    "ladle-218-reproduction-root#lint:scss": {
+      "dependsOn": []
+    },
+    "ladle-218-reproduction-root#lint:js": {
+      "dependsOn": ["@scope/ladle-218-reproduction#build"]
+    },
+    "ladle-218-reproduction-root#lint": {
+      "dependsOn": ["lint:scss", "lint:js"]
+    },
+    "ladle-218-reproduction-root#test": {
+      "dependsOn": ["@scope/ladle-218-reproduction#build"]
+    }
+  }
+}

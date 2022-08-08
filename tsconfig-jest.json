@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig-base",
+  "include": ["**/*.test.js", "**/*.test.ts", "**/*.test.tsx"],
+  "exclude": ["**/*.stories.js", "**/*.stories.tsx", "**/*.d.ts", "**/storybook/**/*"],
+  "compilerOptions": {
+    "composite": false
+  }
+}

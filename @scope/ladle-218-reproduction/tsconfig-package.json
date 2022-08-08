@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig-base",
+  "include": ["./package.json"],
+  "compilerOptions": {
+    // @scope/ladle-218-reproduction/package.json must be part of a tsconfig in order for
+    // @scope/ladle-218-reproduction-guide to statically import it.
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "exclude": []
+}

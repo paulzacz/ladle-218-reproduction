@@ -1,0 +1,85 @@
+{
+  "ignoreFiles": [
+    "**/*.css",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "@scope/ladle-218-reproduction/sass/_vendor/**/*",
+    "@scope/ladle-218-reproduction/sass/abstracts/tokens/*.scss"
+  ],
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-scss", "stylelint-declaration-strict-value", "stylelint-prettier"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "color-named": "never",
+    "color-no-hex": true,
+    "comment-whitespace-inside": null,
+    "comment-empty-line-before": null,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": ["consecutive-duplicates-with-different-values"]
+      }
+    ],
+    "declaration-no-important": true,
+    "max-nesting-depth": 3,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "scale-unlimited/declaration-strict-value": [
+      [
+        "bottom",
+        "fill",
+        "font",
+        "font-weight",
+        "height",
+        "left",
+        "opacity",
+        "outline",
+        "right",
+        "stroke",
+        "top",
+        "width",
+        "cursor",
+        "/border-/",
+        "/color/",
+        "/margin-/",
+        "/padding-/"
+      ],
+      {
+        "ignoreKeywords": {
+          "": ["inherit", "initial", "transparent", "none", "normal", "auto", "0", "100%"],
+          "/border-/": ["0", "none", "50%", "solid", "transparent", "inherit", "initial"],
+          "opacity": ["0", "1", "inherit", "initial"],
+          "cursor": ["auto", "default", "none", "inherit"]
+        }
+      }
+    ],
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-colon-space-after": "always-single-line",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-default": [
+      true,
+      {
+        "ignore": "local"
+      }
+    ],
+    "selector-list-comma-newline-after": null,
+    "selector-max-attribute": 2,
+    "selector-max-class": 3,
+    "selector-max-compound-selectors": 3,
+    "selector-max-id": 0,
+    "selector-max-specificity": [
+      "0,4,0",
+      {
+        "ignoreSelectors": [":hover", ":active", ":focus", ":checked"]
+      }
+    ],
+    "selector-max-universal": 0,
+    "selector-no-qualifying-type": true,
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-class-blacklist": ["disabled", "required"],
+    "unit-blacklist": "rem",
+    "prettier/prettier": true
+  }
+}
